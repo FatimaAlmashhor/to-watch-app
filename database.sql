@@ -14,3 +14,14 @@ DROP COLUMN user_password ;
 
 ALTER TABLE users 
 ADD COLUMN user_password  varchar(200);
+
+CREATE TABLE mylist (
+    item_id uuid PRIMARY KEY DEFAULT 
+    uuid_generate_v4()  NOT NULL,
+    movie_name : varchar(30) ,
+    movie_description  : text ,
+    movie_time : time NOT NULL,
+    movie_image : by, 
+    movie_watched :boolean NOT NULL 
+);
+

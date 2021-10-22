@@ -11,6 +11,7 @@ app.use(cors())
 // routes
 //  register and login 
 app.use("/auth", require('./routes/jwtAuth'))
+app.use("/dashbord", require('./routes/dashbord'))
 
 const PORT = process.env.PORT || 5000
 app.listen(PORT, () => {
